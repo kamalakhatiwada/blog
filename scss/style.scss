@@ -127,6 +127,32 @@ p{
 		} 
 	}
 }
+
+.headline{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	position: relative;
+	margin-bottom: 16px;
+	&:after{
+		content: "";
+		display: inline-block;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		background: #cccccc;
+		top: 40px;
+		left: 2px;
+	}
+	h1{
+		font-size:22px;
+		margin-bottom:40px;
+		font-family: $heading-font;
+		font-weight: 600;
+	}
+}
 body{
 	background: #f9f9f9;
 }
@@ -195,29 +221,29 @@ body{
 //blog
 .dt-blog {
 	padding:80px 0;
-	.headline{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		-ms-flex-align: baseline;
-		align-items: baseline;
-		h1{
-			font-size:22px;
-			margin-bottom:40px;
-			font-family: $heading-font;
-			font-weight: 600;
-			&:after{
-				content: "";
-				display: inline-block;
-			    height: 1px;
-				width: 567%;
-				position: relative;
-				background: #cccccc;
-				top: 0px;
-				left: 0px;
-			}
-		}
-	}
+	// .headline{
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-between;
+	// 	-ms-flex-align: baseline;
+	// 	align-items: baseline;
+	// 	h1{
+	// 		font-size:22px;
+	// 		margin-bottom:40px;
+	// 		font-family: $heading-font;
+	// 		font-weight: 600;
+	// 		&:after{
+	// 			content: "";
+	// 			display: inline-block;
+	// 		    height: 1px;
+	// 			width: 567%;
+	// 			position: relative;
+	// 			background: #cccccc;
+	// 			top: 0px;
+	// 			left: 0px;
+	// 		}
+	// 	}
+	// }
 	h3{
 		font-size:20px;
 		margin-bottom:20px;
@@ -273,32 +299,33 @@ body{
 }
 
 // dt-trend
-
 .dt-trend{
 	padding: 50px 0;
-	.headline{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		-ms-flex-align: baseline;
-		align-items: baseline;
-		h1{
-			font-size:22px;
-			margin-bottom:40px;
-			font-family: $heading-font;
-			font-weight: 600;
-			&:after{
-				content: "";
-				display: inline-block;
-			    height: 1px;
-				width: 567%;
-				position: relative;
-				background: #cccccc;
-				top: 0px;
-				left: 0px;
-			}
-		}
-	}
+	// .headline{
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-between;
+	// 	-ms-flex-align: baseline;
+	// 	align-items: baseline;
+	// 	position: relative;
+	// 	&:after{
+	// 		content: "";
+	// 		display: inline-block;
+	// 		height: 1px;
+	// 		width: 100%;
+	// 		position: absolute;
+	// 		background: #cccccc;
+	// 		top: 40px;
+	// 		left: 2px;
+	// 	}
+	// 	h1{
+	// 		font-size:22px;
+	// 		margin-bottom:40px;
+	// 		font-family: $heading-font;
+	// 		font-weight: 600;
+			
+	// 	}
+	// }
 	.trend-detail{
 		padding: 20px;
 		background: #fff;
@@ -347,7 +374,7 @@ body{
 	}
 	
 }
-// food and travel
+
 
 .dt-trend{
 	h3{
@@ -404,29 +431,29 @@ body{
 
 .dt-recent-blog{
 	padding: 50px 0;
-	.headline{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		-ms-flex-align: baseline;
-		align-items: baseline;
-		h1{
-			font-size:22px;
-			margin-bottom:40px;
-			font-family: $heading-font;
-			font-weight: 600;
-			&:after{
-				content: "";
-				display: inline-block;
-			    height: 1px;
-				width: 567%;
-				position: relative;
-				background: #cccccc;
-				top: 0px;
-				left: 0px;
-			}
-		}
-	}
+	// .headline{
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-between;
+	// 	-ms-flex-align: baseline;
+	// 	align-items: baseline;
+	// 	h1{
+	// 		font-size:22px;
+	// 		margin-bottom:40px;
+	// 		font-family: $heading-font;
+	// 		font-weight: 600;
+	// 		&:after{
+	// 			content: "";
+	// 			display: inline-block;
+	// 		    height: 1px;
+	// 			width: 567%;
+	// 			position: relative;
+	// 			background: #cccccc;
+	// 			top: 0px;
+	// 			left: 0px;
+	// 		}
+	// 	}
+	// }
 	img{
 		width: 100%;
 	}
@@ -478,8 +505,6 @@ body{
 	}
 }
 
-
-
 //footer
 
 .dt-footer{
@@ -528,5 +553,9 @@ body{
 				// }
 			}
 		}
+	}
+	.copyright-text{
+		text-align: center;
+		font-size: 12px;
 	}
 }

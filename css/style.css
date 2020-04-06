@@ -68,6 +68,29 @@ p {
           color: #17bb32;
           padding-right: 7px; }
 
+.headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  position: relative;
+  margin-bottom: 16px; }
+  .headline:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #cccccc;
+    top: 40px;
+    left: 2px; }
+  .headline h1 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-family: "Lora", serif;
+    font-weight: 600; }
+
 body {
   background: #f9f9f9; }
 
@@ -117,26 +140,6 @@ body {
 
 .dt-blog {
   padding: 80px 0; }
-  .dt-blog .headline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    -ms-flex-align: baseline;
-    align-items: baseline; }
-    .dt-blog .headline h1 {
-      font-size: 22px;
-      margin-bottom: 40px;
-      font-family: "Lora", serif;
-      font-weight: 600; }
-      .dt-blog .headline h1:after {
-        content: "";
-        display: inline-block;
-        height: 1px;
-        width: 567%;
-        position: relative;
-        background: #cccccc;
-        top: 0px;
-        left: 0px; }
   .dt-blog h3 {
     font-size: 20px;
     margin-bottom: 20px;
@@ -180,26 +183,6 @@ body {
 
 .dt-trend {
   padding: 50px 0; }
-  .dt-trend .headline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    -ms-flex-align: baseline;
-    align-items: baseline; }
-    .dt-trend .headline h1 {
-      font-size: 22px;
-      margin-bottom: 40px;
-      font-family: "Lora", serif;
-      font-weight: 600; }
-      .dt-trend .headline h1:after {
-        content: "";
-        display: inline-block;
-        height: 1px;
-        width: 567%;
-        position: relative;
-        background: #cccccc;
-        top: 0px;
-        left: 0px; }
   .dt-trend .trend-detail {
     padding: 20px;
     background: #fff;
@@ -280,26 +263,6 @@ body {
 
 .dt-recent-blog {
   padding: 50px 0; }
-  .dt-recent-blog .headline {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    -ms-flex-align: baseline;
-    align-items: baseline; }
-    .dt-recent-blog .headline h1 {
-      font-size: 22px;
-      margin-bottom: 40px;
-      font-family: "Lora", serif;
-      font-weight: 600; }
-      .dt-recent-blog .headline h1:after {
-        content: "";
-        display: inline-block;
-        height: 1px;
-        width: 567%;
-        position: relative;
-        background: #cccccc;
-        top: 0px;
-        left: 0px; }
   .dt-recent-blog img {
     width: 100%; }
   .dt-recent-blog .trend-detail {
@@ -370,3 +333,6 @@ body {
         color: #fff;
         font-size: 15px;
         font-weight: 500; }
+  .dt-footer .copyright-text {
+    text-align: center;
+    font-size: 12px; }
