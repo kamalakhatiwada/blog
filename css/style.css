@@ -28,14 +28,14 @@ p {
   font-family: "Lora", serif; }
 
 .btn-primary {
-  color: #17bb32;
+  color: #154473;
   font-weight: 600;
   background: transparent;
   transition: all ease-in .5s;
   text-decoration: none; }
   .btn-primary:hover {
     background: transparent;
-    color: #0e7ece;
+    color: #f7376c;
     transition: ease-in .5s;
     text-decoration: none; }
 
@@ -72,27 +72,42 @@ body {
   background: #f9f9f9; }
 
 .dt-menubar {
-  background: #2a5034;
+  background-image: url("../image/bg-image-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  position: relative;
   padding: 43px 0; }
+  .dt-menubar:after {
+    content: '';
+    background: #154473;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
   .dt-menubar .bg-light {
     background: #fff !important;
-    padding: 21px 12px;
+    padding: 6px 20px;
     position: relative;
-    top: -53px; }
-    .dt-menubar .bg-light a {
-      color: #17bb32;
-      font-size: 18px;
-      font-weight: 600; }
-    .dt-menubar .bg-light .navbar-nav .nav-item .active > .nav-link {
-      background: transparent;
-      color: #7171ce;
-      font-size: 18px;
-      font-weight: 600; }
-    .dt-menubar .bg-light .navbar-nav .nav-item a {
-      color: #17bb32;
-      font-size: 18px;
-      font-weight: 600;
-      margin-right: 10px; }
+    top: -43px;
+    z-index: 1; }
+    .dt-menubar .bg-light img {
+      width: 70%; }
+    .dt-menubar .bg-light .navbar-nav {
+      z-index: 1; }
+      .dt-menubar .bg-light .navbar-nav .nav-item .active > .nav-link {
+        background: transparent;
+        color: #7171ce;
+        font-size: 18px;
+        font-weight: 600; }
+      .dt-menubar .bg-light .navbar-nav .nav-item a {
+        color: #154473;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 10px; }
   .dt-menubar h3, .dt-menubar p {
     text-align: center;
     z-index: 9;
@@ -154,11 +169,11 @@ body {
           list-style: none;
           padding-right: 10px; }
           .dt-blog .detail .author .p-name li .name {
-            color: #1bd26d;
+            color: #f94a5a;
             font-weight: 500;
             padding-right: 5px; }
           .dt-blog .detail .author .p-name li .mdi {
-            color: #17bb32;
+            color: #f94a5a;
             padding-right: 7px; }
   .dt-blog img {
     width: 100%; }
@@ -210,11 +225,11 @@ body {
           padding-right: 10px;
           font-size: 14px; }
           .dt-trend .trend-detail .author .p-name li .name {
-            color: #1bd26d;
+            color: #f94a5a;
             font-weight: 500;
             padding-right: 5px; }
           .dt-trend .trend-detail .author .p-name li .mdi {
-            color: #17bb32;
+            color: #f94a5a;
             padding-right: 7px; }
     .dt-trend .trend-detail .card-title {
       margin-bottom: 20px; }
@@ -253,19 +268,79 @@ body {
         list-style: none;
         padding-right: 10px; }
         .dt-trend .detail .author .p-name li .name {
-          color: #1bd26d;
+          color: #f94a5a;
           font-weight: 500;
           padding-right: 5px; }
         .dt-trend .detail .author .p-name li .mdi {
-          color: #17bb32;
+          color: #f94a5a;
           padding-right: 7px; }
 
 .dt-trend img {
   width: 100%; }
 
+.dt-recent-blog {
+  padding: 50px 0; }
+  .dt-recent-blog .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    .dt-recent-blog .headline h1 {
+      font-size: 22px;
+      margin-bottom: 40px;
+      font-family: "Lora", serif;
+      font-weight: 600; }
+      .dt-recent-blog .headline h1:after {
+        content: "";
+        display: inline-block;
+        height: 1px;
+        width: 567%;
+        position: relative;
+        background: #cccccc;
+        top: 0px;
+        left: 0px; }
+  .dt-recent-blog img {
+    width: 100%; }
+  .dt-recent-blog .trend-detail {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); }
+    .dt-recent-blog .trend-detail .author {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px; }
+      .dt-recent-blog .trend-detail .author .p-image {
+        padding-right: 20px;
+        margin-top: 5px; }
+        .dt-recent-blog .trend-detail .author .p-image .p-icon {
+          border-radius: 50px; }
+      .dt-recent-blog .trend-detail .author .p-name {
+        position: relative;
+        left: -44px;
+        top: 12px; }
+        .dt-recent-blog .trend-detail .author .p-name li {
+          color: #838a8a;
+          display: inline-flex;
+          flex-direction: row;
+          list-style: none;
+          padding-right: 10px;
+          font-size: 14px; }
+          .dt-recent-blog .trend-detail .author .p-name li .name {
+            color: #f94a5a;
+            font-weight: 500;
+            padding-right: 5px; }
+          .dt-recent-blog .trend-detail .author .p-name li .mdi {
+            color: #f94a5a;
+            padding-right: 7px; }
+    .dt-recent-blog .trend-detail .card-title {
+      margin-bottom: 20px; }
+      .dt-recent-blog .trend-detail .card-title a {
+        color: #02182f; }
+
 .dt-footer {
   padding: 30px;
-  background: #1e4631; }
+  background: #3f4679; }
   .dt-footer h4 {
     font-size: 18px;
     margin-bottom: 40px;
